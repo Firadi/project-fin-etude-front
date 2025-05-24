@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { getAuthHeader } from '../Agence/authService';
 
-const API_URL = "http://localhost:8080/api/logements";
-const API_ByCommercial = "http://localhost:8080/api/logements/my-logements";
+const API_URL = `${import.meta.env.VITE_API_BASE_URL}/api/logements`;
+const API_ByCommercial = `${import.meta.env.VITE_API_BASE_URL}/api/logements/my-logements`;
 export const getLogements = async () => {
     try {
         const response = await axios.get(API_URL);

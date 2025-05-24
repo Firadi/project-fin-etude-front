@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getAuthHeader } from "../Agence/authService";
 
-const API_URL = "http://localhost:8080/api/employees";
+const API_URL = `${import.meta.env.VITE_API_BASE_URL}/api/employees`;
 const API_ByCommercial = "http://localhost:8080/api/employees/commercials";
 
 // POST 
